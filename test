@@ -24,3 +24,4 @@ git master
 svn no-rebase
 
 git master test
+git master 3:12
