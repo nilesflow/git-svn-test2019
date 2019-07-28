@@ -1,0 +1,11 @@
+#!/bin/sh
+
+WORKING_BRANCH=`git branch -l | grep "*" | cut -d " " -f 2`
+
+if [ $WORKING_BRANCH != "master" ]
+then
+    echo "WARNING: curret branch is NOT \"master\""
+    exit 1
+fi
+
+exit 0
